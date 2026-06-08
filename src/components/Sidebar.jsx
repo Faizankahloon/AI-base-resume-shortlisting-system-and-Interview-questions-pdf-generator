@@ -1,4 +1,4 @@
-import '../styles/sidebar.css'
+import '../styles/Sidebar.css'
 import logo from '../images/Logo.svg'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react';
