@@ -1,0 +1,144 @@
+/* ── Contact Page ── */
+
+.contact_heading {
+    width: 100%;
+    height: 100px;
+    background-color: #1e3a8a;
+    border: none;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_heading h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* ── Main content row: form + logo side by side ── */
+.c_box {
+    width: 100%;
+    background-color: #f0f2f8;
+    min-height: 500px;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+/* ── Form column ── */
+.c_form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    flex-shrink: 0;
+    gap: 0;
+    margin-left: 200px;
+}
+
+.c1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0 ;
+    gap: 6px;
+}
+
+.c1 input,
+.c1 textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    background: #ffffff;
+    color: #111827;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c1 input::placeholder,
+.c1 textarea::placeholder {
+    color: #9ca3af;
+}
+
+.c1 input:focus,
+.c1 textarea:focus {
+    border-color: #3b82f6;
+}
+
+.c1 textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.c1 button {
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1e40af;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.c1 button:hover {
+    
+    color: #93c5fd;
+}
+
+.error_msg {
+    text-align: center;
+    color: #dc2626;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+/* ── Logo column ── */
+.con_logo {
+    width: 430px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 14px;
+   margin-left: auto;
+}
+
+/* ── Responsive: stack on small screens ── */
+@media (max-width: 780px) {
+    .c_box {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .c_form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .con_logo {
+        width: 280px;
+        height: 350px;
+    }
+}

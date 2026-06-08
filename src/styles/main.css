@@ -1,0 +1,182 @@
+ * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin-top: 20px;
+    padding: 0;
+    
+    overflow-x: clip; 
+}
+
+#root {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 1vw;
+    overflow-x: hidden; /* contain overflow here instead */
+}
+
+/* ===== LARGE DESKTOP / FULL HD (1920px+) ===== */
+@media (min-width: 1920px) {
+    html { font-size: 18px; }
+    #root { max-width: 1800px; }
+}
+
+/* ===== 4K / PROJECTOR (2560px+) ===== */
+@media (min-width: 2560px) {
+    html { font-size: 22px; }
+    #root { max-width: 2400px; }
+}
+
+/* ===== LARGE LAPTOP ===== */
+@media (max-width: 1600px) { html { font-size: 15px; } }
+@media (max-width: 1400px) { html { font-size: 14px; } }
+
+@media (max-width: 1200px) {
+    html { font-size: 13px; }
+    .Sidebar_button_1, .Sidebar_button_2, .Sidebar_button_3,
+    .Sidebar_button_4, .Sidebar_button_5 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+    html { font-size: 12px; }
+}
+
+/* ===== TABLET (900px) ===== */
+@media (max-width: 900px) {
+    html { font-size: 11px; }
+
+    /* FIXED: Sidebar layout — use flex-wrap instead of collapsing positions */
+    .Sidebar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto !important;
+        padding: 10px;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* FIXED: Buttons stay in flow, no static override breaking layout */
+    .Sidebar_button_1, .Sidebar_button_2, .Sidebar_button_3,
+    .Sidebar_button_4, .Sidebar_button_5, .Sidebar_button_6 {
+        position: relative !important; /* relative keeps spacing, not static */
+        font-size: 12px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .ProjectLogo {
+        position: relative !important;
+        height: 50px !important;
+        width: 50px !important;
+        flex-shrink: 0;
+    }
+
+    .heading {
+        position: relative !important;
+        font-size: 13px;
+        flex-shrink: 0;
+    }
+
+    .user-avatar {
+        position: relative !important;
+        margin-left: auto; /* pushes avatar to right end */
+    }
+
+    .avatar-dropdown {
+        position: fixed !important;
+        top: 120px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    /* HOME */
+    .Home { height: auto !important; padding-bottom: 20px; }
+    .h1, .h2 { position: relative !important; font-size: 20px; }
+    .p1, .p2 { position: relative !important; }
+    .but { position: relative !important; margin-top: 20px; display: inline-block; }
+    .i1  { position: relative !important; width: 100% !important; height: auto !important; }
+
+    /* USER SECTION */
+    .u2 { width: 90% !important; height: auto !important; padding-bottom: 20px; }
+    .u3 { position: relative !important; }
+    .u4 { position: relative !important; margin-top: 60px; }
+    .u5 { position: relative !important; width: 90% !important; margin: 10px auto; }
+    .u6 { position: relative !important; margin: 10px 5px; }
+    .u7 { position: relative !important; margin: 10px 5px; }
+
+    /* FORM SECTION */
+    .head  { position: relative !important; font-size: 22px; text-align: center; }
+    .para  { position: relative !important; text-align: center; }
+    .d2    { width: 90% !important; height: auto !important; padding-bottom: 20px; }
+    .l1, .Req, .l2 { position: relative !important; }
+    .inp1  { position: relative !important; width: 90% !important; margin: 5px auto; display: block; }
+    .d3    { position: relative !important; width: 90% !important; height: auto !important; margin: 10px auto; }
+    .inp2, .inp3, .inp4 { position: relative !important; width: 95% !important; }
+    .inp5  { position: relative !important; width: 90% !important; display: block; margin: 5px auto; }
+    .sub   { position: relative !important; margin: 10px 5px; }
+    .fin   { position: relative !important; margin: 10px 5px; }
+
+    /* DASHBOARD — FIXED: use relative not static to prevent collapse */
+    .Dashboard_d1 { height: auto !important; padding-bottom: 20px; }
+    .Dashboard_d2,
+    .Dashboard_d3,
+    .interview_pdf {
+        position: relative !important; /* FIXED: was static, caused layout jump */
+        width: 90% !important;
+        margin: 10px auto;
+    }
+    .Dashboard_d4 {
+        position: relative !important;
+        width: 90% !important;
+        margin: 10px auto;
+    }
+    .Analytics_main {
+        position: relative !important;
+        width: 90% !important;
+        margin: 10px auto;
+    }
+
+    /* CONTACT */
+    .contact_main    { height: auto !important; padding: 10px; }
+    .contact_heading { position: relative !important; }
+    .contact_mail    { position: relative !important; }
+    .contact_icon    { position: relative !important; }
+    .creation_year   { position: relative !important; }
+    .linkedn_logo    { position: relative !important; width: 28px; height: 28px; }
+}
+
+/* ===== MOBILE (600px) ===== */
+@media (max-width: 600px) {
+    html { font-size: 10px; }
+
+    /* FIXED: column layout for mobile sidebar */
+    .Sidebar {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* Sidebar buttons stack vertically on mobile */
+    .Sidebar_button_1, .Sidebar_button_2, .Sidebar_button_3,
+    .Sidebar_button_4, .Sidebar_button_5, .Sidebar_button_6 {
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .u1 { height: auto !important; padding: 20px 10px; }
+    .u2 { width: 95% !important; }
+    .d1 { height: auto !important; padding: 20px 10px; }
+    .d2 { width: 95% !important; }
+
+    .Dashboard_d4 { min-height: 300px !important; }
+    .Dashboard_d5 { height: auto !important; }
+} 

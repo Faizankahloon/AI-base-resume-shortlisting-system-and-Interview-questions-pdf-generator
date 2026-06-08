@@ -1,0 +1,163 @@
+/* ===== OUTER WRAPPER ===== */
+.d1 {
+    margin-top: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color:#1e3a8a; 
+    min-height: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* ===== PAGE HEADING ===== */
+.box2{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color:#f5f5f5; 
+    min-height: 650px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+/* ===== SUBTITLE ===== */
+.para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(13px, 1.1vw, 15px);
+    font-weight: 400;
+    color: #90caf9;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+
+/* ===== FORM CARD ===== */
+.d2 {
+    background-color: #ffffff;
+    width: clamp(280px, 90%, 580px);
+    height: auto;
+    border-radius: 12px;
+    padding: 2rem;
+    color: #1a1a2e;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* ===== LABELS ===== */
+.l1, .l2, .Req {
+    font-size: 12px;
+    font-weight: 500;
+    color: #546e7a;
+    letter-spacing: 0.03em;
+    position: static;
+}
+
+/* ===== TEXT INPUTS ===== */
+.inp1, .inp5 {
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    color: #1a1a2e;
+    font-size: 13px;
+    position: static;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.inp1:focus, .inp5:focus {
+    border-color: #1976d2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(25,118,210,0.1);
+}
+
+/* ===== REQUIREMENTS BOX ===== */
+.d3 {
+    width: 100%;
+    height: auto;
+    border: 1.5px dashed #90caf9;
+    background-color: #f0f7ff;
+    border-radius: 10px;
+    padding: 0;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ===== INPUTS INSIDE REQUIREMENTS ===== */
+.inp2, .inp3, .inp4 {
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 0.5px solid rgba(25,118,210,0.1);
+    background: transparent;
+    color: #1a1a2e;
+    font-size: 13px;
+    position: static;
+    outline: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.inp4 { border-bottom: none; }
+.inp2:focus, .inp3:focus, .inp4:focus {
+    background-color: #e3f2fd;
+}
+
+/* ===== BUTTON ROW ===== */
+.btn-row {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.sub {
+    background-color: #1565c0;
+    padding: 9px 22px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    position: static;
+    transition: background 0.2s;
+}
+.sub:hover { color:  #90caf9};
+
+
+button.fin {
+  border: none;
+  color: #1565c0;
+  padding: 7px 22px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+}
+.fin:hover { 
+    background-color: #1565c0; 
+    color: white; 
+}
