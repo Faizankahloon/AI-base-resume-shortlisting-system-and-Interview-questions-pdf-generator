@@ -128,19 +128,19 @@
     top: 50%;
     right: 60px;
     transform: translateY(-50%);
-    background: #ffffff !important;
-    color: #1e3a8a !important;
+    background:  #2563eb ;
+    color: white ;
     border: none;
     border-radius: 7px;
     padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    
     cursor: pointer;
     transition: opacity 0.15s;
 }
 
 .Sidebar_button_6:hover {
-    opacity: 0.9;
+    color: #93c5fd;
 }
 
 /* ── 3-dot menu wrapper — fixed to right corner ── */
